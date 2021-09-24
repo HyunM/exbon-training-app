@@ -86,6 +86,7 @@ const July082021 = () => {
               value={"07/08/2021"}
               autoOk={true}
               disableMaskedInput={true}
+              onChange={() => {}}
               renderInput={params => (
                 <TextField
                   {...params}
@@ -156,7 +157,17 @@ const July082021 = () => {
                 Q1. Fill out timesheet and daily report for the day.
               </p>
             </div>
-            <div style={{ padding: "1%", textAlign: "right" }}>
+            <div
+              style={{
+                padding: "1%",
+                textAlign: "right",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Link href="July012021">
+                <Button variant="outlined">PREVIOUS</Button>
+              </Link>
               <Link href="July092021">
                 <Button variant="outlined">NEXT</Button>
               </Link>

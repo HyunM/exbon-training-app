@@ -87,6 +87,7 @@ const July012021 = () => {
               value={"07/01/2021"}
               autoOk={true}
               disableMaskedInput={true}
+              onChange={() => {}}
               renderInput={params => (
                 <TextField
                   {...params}
