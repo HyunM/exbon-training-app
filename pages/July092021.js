@@ -156,55 +156,81 @@ const July092021 = () => {
                 The customer asked for some work to be done that was not part of
                 the initial specification.
               </p>
-              <p>Q1. What should be done in this case? (Multiple choice)</p>
-              <FormControl
-                sx={{ m: 3, marginBottom: "5px", marginTop: "5px" }}
-                component="fieldset"
-                variant="standard"
+              <div
+                style={{
+                  marginTop: "50px",
+                  border: "2px solid #d3c1fc",
+                  borderRadius: "10px",
+                  padding: "1%",
+                  paddingBottom: "1%",
+                  backgroundColor: "#ffffff",
+                }}
               >
-                <FormLabel component="legend"></FormLabel>
-                <FormGroup>
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        checked={gilad}
-                        onChange={handleChange}
-                        name="gilad"
-                      />
-                    }
-                    label="omnis iste natus error sit voluptatem accusantium doloremque laudantium."
-                  />
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        checked={jason}
-                        onChange={handleChange}
-                        name="jason"
-                      />
-                    }
-                    label="sit amet, consectetur, adipisci velit, sed quia non numquam eius"
-                  />
-                  <FormControlLabel
-                    control={
-                      <Checkbox
-                        checked={antoine}
-                        onChange={handleChange}
-                        name="antoine"
-                      />
-                    }
-                    label="Duis aute irure dolor in reprehenderit in voluptate velit esse"
-                  />
-                </FormGroup>
-                {/* <FormHelperText>Be careful</FormHelperText> */}
-              </FormControl>
-              <p style={{ marginTop: "40px" }}>
-                Q2. Create a Change Order with the following estimates, then
-                upload it.
-              </p>
-              <Button variant="contained" component="label">
-                Upload File
-                <input type="file" hidden />
-              </Button>
+                <p>Q1. What should be done in this case? (Multiple choice)</p>
+                <FormControl
+                  sx={{ m: 3, marginBottom: "5px", marginTop: "5px" }}
+                  component="fieldset"
+                  variant="standard"
+                >
+                  <FormLabel component="legend"></FormLabel>
+                  <FormGroup>
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={gilad}
+                          onChange={handleChange}
+                          name="gilad"
+                        />
+                      }
+                      label="omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+                    />
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={jason}
+                          onChange={handleChange}
+                          name="jason"
+                        />
+                      }
+                      label="sit amet, consectetur, adipisci velit, sed quia non numquam eius"
+                    />
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={antoine}
+                          onChange={handleChange}
+                          name="antoine"
+                        />
+                      }
+                      label="Duis aute irure dolor in reprehenderit in voluptate velit esse"
+                    />
+                  </FormGroup>
+                  {/* <FormHelperText>Be careful</FormHelperText> */}
+                </FormControl>
+              </div>
+              <div
+                style={{
+                  marginTop: "20px",
+                  border: "2px solid #d3c1fc",
+                  borderRadius: "10px",
+                  padding: "1%",
+                  paddingBottom: "3%",
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <p>
+                  Q2. Create a Change Order with the following estimates, then
+                  upload it.
+                </p>
+                <Button
+                  variant="contained"
+                  component="label"
+                  style={{ marginLeft: "5%" }}
+                >
+                  Upload File
+                  <input type="file" hidden />
+                </Button>
+              </div>
             </div>
             <div
               style={{

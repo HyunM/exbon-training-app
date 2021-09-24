@@ -153,9 +153,20 @@ const July082021 = () => {
                 3 field workers worked on Task 1 for 8 hours, and ABC
                 subcontractor finished 20% of Task 2.
               </p>
-              <p style={{ marginTop: "40px" }}>
-                Q1. Fill out timesheet and daily report for the day.
-              </p>
+              <div
+                style={{
+                  marginTop: "50px",
+                  border: "2px solid #d3c1fc",
+                  borderRadius: "10px",
+                  padding: "1%",
+                  paddingBottom: "0px",
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <p style={{ marginTop: "5px", marginBottom: "14px" }}>
+                  Q1. Fill out timesheet and daily report for the day.
+                </p>
+              </div>
             </div>
             <div
               style={{

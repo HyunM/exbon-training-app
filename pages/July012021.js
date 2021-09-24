@@ -132,17 +132,32 @@ const July012021 = () => {
           >
             <div style={{ padding: "1%" }}>
               <h2>Objective: The project has been awarded.</h2>
-              <p style={{ marginTop: "40px", marginBottom: "50px" }}>
+              <p
+                style={{
+                  marginTop: "40px",
+                  marginBottom: "50px",
+                }}
+              >
                 Locate the NTP document in OneDrive and go over it.
               </p>
-              <p>Q1. What is the project’s NTP Date?</p>
-              <TextField
-                label="Answer"
-                fullWidth
-                multiline
-                rows={2}
-                defaultValue=""
-              />
+              <div
+                style={{
+                  border: "2px solid #d3c1fc",
+                  borderRadius: "10px",
+                  padding: "1%",
+                  paddingBottom: "3%",
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <p>Q1. What is the project’s NTP Date?</p>
+                <TextField
+                  label="Answer"
+                  fullWidth
+                  multiline
+                  rows={2}
+                  defaultValue=""
+                />
+              </div>
             </div>
             <div style={{ padding: "1%", textAlign: "right" }}>
               <Link href="July082021">
