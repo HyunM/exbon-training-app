@@ -25,6 +25,11 @@ const Accordion = styled(props => (
   "&:before": {
     display: "none",
   },
+  "&:hover": {
+    color: "#109b84",
+    backgroundColor: "#eff3f2",
+    border: "2px solid",
+  },
 }));
 
 const AccordionSummary = styled(props => (
@@ -97,7 +102,7 @@ const Index = () => {
           <br />
           <Accordion expanded={acc.first} onChange={() => changeAcc("first")}>
             <AccordionSummary id="acc1">
-              <Typography>Collapsible Group Item #1</Typography>
+              <Typography>Field Worker</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -111,7 +116,7 @@ const Index = () => {
           </Accordion>
           <Accordion expanded={acc.second} onChange={() => changeAcc("second")}>
             <AccordionSummary id="acc2">
-              <Typography>Collapsible Group Item #2</Typography>
+              <Typography>Subcontractor</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -125,7 +130,7 @@ const Index = () => {
           </Accordion>
           <Accordion expanded={acc.third} onChange={() => changeAcc("third")}>
             <AccordionSummary id="acc3">
-              <Typography>Collapsible Group Item #3</Typography>
+              <Typography>Event</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
@@ -142,7 +147,7 @@ const Index = () => {
           <Box
             sx={{
               minHeight: "98vh",
-              backgroundColor: "white",
+              backgroundColor: "#f7f5fa",
               borderRadius: "10px",
               display: "flex",
               flexDirection: "column",
@@ -150,7 +155,8 @@ const Index = () => {
             }}
           >
             <div style={{ padding: "1%" }}>
-              <p style={{ marginTop: "3px" }}>
+              <h2>Objective: dolor sit amet, consectetur adipiscing elit.</h2>
+              <p style={{ marginTop: "40px" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 ege Lorem ipsum dolor sit amet, consectetur adipiscing elit.
