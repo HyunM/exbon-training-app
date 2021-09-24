@@ -1,0 +1,16 @@
+.main {
+  background-color: black;
+  width: 102vh;
+  height: 102vh;
+}
+
+.main__data {
+  background-color: rgb(218, 245, 235);
+  width: 100vh;
+  height: 100vh;
+  margin: 10%;
+}
+
+.main__data__accordion {
+  padding: 3%;
+}
