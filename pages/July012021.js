@@ -130,11 +130,11 @@ const July012021 = () => {
             }}
           >
             <div style={{ padding: "1%" }}>
-              <h2>The project has been awarded.</h2>
+              <h2>Objective: The project has been awarded.</h2>
               <p style={{ marginTop: "40px", marginBottom: "50px" }}>
                 Locate the NTP document in OneDrive and go over it.
               </p>
-              <p>What is the project’s NTP Date?</p>
+              <p>Q1. What is the project’s NTP Date?</p>
               <TextField
                 label="Answer"
                 fullWidth

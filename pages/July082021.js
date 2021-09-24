@@ -57,7 +57,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   borderTop: "1px solid rgba(0, 0, 0, .125)",
 }));
 
-const Index = () => {
+const July082021 = () => {
   const [acc, setAcc] = useState({
     first: true,
     second: true,
@@ -83,7 +83,7 @@ const Index = () => {
               variant="inline"
               label="Date"
               inputFormat="MM/dd/yyyy"
-              value={"09/24/2021"}
+              value={"07/08/2021"}
               autoOk={true}
               disableMaskedInput={true}
               renderInput={params => (
@@ -103,43 +103,31 @@ const Index = () => {
           <br />
           <Accordion expanded={acc.first} onChange={() => changeAcc("first")}>
             <AccordionSummary id="acc1">
-              <Typography>Field Worker</Typography>
+              <Typography>Daily Report - Work Completion</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
+                <a
+                  target="_blank"
+                  href="https://dailyreport.exbon.com/task-completion?pid=999999"
+                >
+                  Link
+                </a>
               </Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion expanded={acc.second} onChange={() => changeAcc("second")}>
             <AccordionSummary id="acc2">
-              <Typography>Subcontractor</Typography>
+              <Typography>Daily Report - Timesheet</Typography>
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
-              </Typography>
-            </AccordionDetails>
-          </Accordion>
-          <Accordion expanded={acc.third} onChange={() => changeAcc("third")}>
-            <AccordionSummary id="acc3">
-              <Typography>Event</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
-              <Typography>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                eget.
+                <a
+                  target="_blank"
+                  href="https://dailyreport.exbon.com/timesheet?pid=999999"
+                >
+                  Link
+                </a>
               </Typography>
             </AccordionDetails>
           </Accordion>
@@ -156,69 +144,20 @@ const Index = () => {
             }}
           >
             <div style={{ padding: "1%" }}>
-              <h2>Objective: dolor sit amet, consectetur adipiscing elit.</h2>
+              <h2>Objective: Daily Report</h2>
               <p style={{ marginTop: "40px" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                ege Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                ege
-              </p>
-              <TextField
-                label="Multiline"
-                fullWidth
-                multiline
-                rows={4}
-                defaultValue="Default Value"
-              />
-
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                ege
-              </p>
-              <TextField
-                label="Multiline"
-                fullWidth
-                multiline
-                rows={4}
-                defaultValue="Default Value"
-              />
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                ege
+                Today is the first day of construction.
               </p>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                ege
+                3 field workers worked on Task 1 for 8 hours, and ABC
+                subcontractor finished 20% of Task 2.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                ege
+              <p style={{ marginTop: "40px" }}>
+                Q1. Fill out timesheet and daily report for the day.
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                ege
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                ege
-              </p>
-              <TextField
-                label="Multiline"
-                fullWidth
-                multiline
-                rows={4}
-                defaultValue="Default Value"
-              />
             </div>
             <div style={{ padding: "1%", textAlign: "right" }}>
-              <Link href="July012021">
+              <Link href="July092021">
                 <Button variant="outlined">NEXT</Button>
               </Link>
             </div>
@@ -229,4 +168,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default July082021;
