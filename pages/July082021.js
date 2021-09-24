@@ -218,7 +218,9 @@ const Index = () => {
               />
             </div>
             <div style={{ padding: "1%", textAlign: "right" }}>
-              <Button variant="outlined">NEXT</Button>
+              <Link href="July012021">
+                <Button variant="outlined">NEXT</Button>
+              </Link>
             </div>
           </Box>
         </Grid>
