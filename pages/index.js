@@ -9,6 +9,9 @@ import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
+import DateAdapter from "@date-io/date-fns";
+import LocalizationProvider from "@mui/lab/LocalizationProvider";
+import DatePicker from "@mui/lab/DatePicker";
 
 const Accordion = styled(props => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -51,6 +54,28 @@ const Index = () => {
     <Box sx={{ width: "100%" }}>
       <Grid container columnSpacing={{ xs: 5 }}>
         <Grid item xs={6}>
+          <LocalizationProvider dateAdapter={DateAdapter}>
+            <DatePicker
+              variant="inline"
+              label="Date"
+              inputFormat="MM/dd/yyyy"
+              value={"09/24/2021"}
+              autoOk={true}
+              renderInput={params => (
+                <TextField
+                  {...params}
+                  disabled
+                  style={{
+                    backgroundColor: "white",
+                  }}
+                />
+              )}
+            />
+          </LocalizationProvider>
+
+          <br />
+          <br />
+          <br />
           <Accordion expanded={true}>
             <AccordionSummary
               aria-controls="panel1d-content"
