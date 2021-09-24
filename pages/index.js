@@ -12,6 +12,8 @@ import TextField from "@mui/material/TextField";
 import DateAdapter from "@date-io/date-fns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DatePicker from "@mui/lab/DatePicker";
+import { useState } from "react";
+import { Button } from "@mui/material";
 
 const Accordion = styled(props => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -50,6 +52,22 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 const Index = () => {
+  const [acc, setAcc] = useState({
+    first: true,
+    second: true,
+    third: true,
+  });
+
+  const changeAcc = order => {
+    if (order == "first") {
+      setAcc({ ...acc, first: !acc.first });
+    } else if (order == "second") {
+      setAcc({ ...acc, second: !acc.second });
+    } else if (order == "third") {
+      setAcc({ ...acc, third: !acc.third });
+    }
+  };
+
   return (
     <Box sx={{ width: "100%" }}>
       <Grid container columnSpacing={{ xs: 5 }}>
@@ -61,10 +79,11 @@ const Index = () => {
               inputFormat="MM/dd/yyyy"
               value={"09/24/2021"}
               autoOk={true}
+              disableMaskedInput={true}
               renderInput={params => (
                 <TextField
                   {...params}
-                  disabled
+                  disabled={true}
                   style={{
                     backgroundColor: "white",
                   }}
@@ -76,11 +95,8 @@ const Index = () => {
           <br />
           <br />
           <br />
-          <Accordion expanded={true}>
-            <AccordionSummary
-              aria-controls="panel1d-content"
-              id="panel1d-header"
-            >
+          <Accordion expanded={acc.first} onChange={() => changeAcc("first")}>
+            <AccordionSummary id="acc1">
               <Typography>Collapsible Group Item #1</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -93,11 +109,8 @@ const Index = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion expanded={true}>
-            <AccordionSummary
-              aria-controls="panel2d-content"
-              id="panel2d-header"
-            >
+          <Accordion expanded={acc.second} onChange={() => changeAcc("second")}>
+            <AccordionSummary id="acc2">
               <Typography>Collapsible Group Item #2</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -110,11 +123,8 @@ const Index = () => {
               </Typography>
             </AccordionDetails>
           </Accordion>
-          <Accordion expanded={true}>
-            <AccordionSummary
-              aria-controls="panel3d-content"
-              id="panel3d-header"
-            >
+          <Accordion expanded={acc.third} onChange={() => changeAcc("third")}>
+            <AccordionSummary id="acc3">
               <Typography>Collapsible Group Item #3</Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -131,13 +141,16 @@ const Index = () => {
         <Grid item xs={6}>
           <Box
             sx={{
-              height: "98vh",
+              minHeight: "98vh",
               backgroundColor: "white",
               borderRadius: "10px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
             }}
           >
             <div style={{ padding: "1%" }}>
-              <p>
+              <p style={{ marginTop: "3px" }}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
                 ege Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -196,6 +209,9 @@ const Index = () => {
                 rows={4}
                 defaultValue="Default Value"
               />
+            </div>
+            <div style={{ padding: "1%", textAlign: "right" }}>
+              <Button variant="outlined">NEXT</Button>
             </div>
           </Box>
         </Grid>
