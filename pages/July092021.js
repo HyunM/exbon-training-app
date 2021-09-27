@@ -105,7 +105,6 @@ const July092021 = () => {
           <LocalizationProvider dateAdapter={DateAdapter}>
             <DatePicker
               variant="inline"
-              label="Date"
               inputFormat="MM/dd/yyyy"
               value={"07/09/2021"}
               autoOk={true}
@@ -126,7 +125,7 @@ const July092021 = () => {
           <br />
           <br />
           <br />
-          <Accordion expanded={acc.first} onChange={() => changeAcc("first")}>
+          {/* <Accordion expanded={acc.first} onChange={() => changeAcc("first")}>
             <AccordionSummary id="acc1">
               <Typography>Change Order Form</Typography>
             </AccordionSummary>
@@ -137,7 +136,7 @@ const July092021 = () => {
                 </a>
               </Typography>
             </AccordionDetails>
-          </Accordion>
+          </Accordion> */}
         </Grid>
         <Grid item xs={6}>
           <Box

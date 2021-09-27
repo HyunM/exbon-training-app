@@ -81,7 +81,6 @@ const July082021 = () => {
           <LocalizationProvider dateAdapter={DateAdapter}>
             <DatePicker
               variant="inline"
-              label="Date"
               inputFormat="MM/dd/yyyy"
               value={"07/08/2021"}
               autoOk={true}
@@ -104,32 +103,18 @@ const July082021 = () => {
           <br />
           <Accordion expanded={acc.first} onChange={() => changeAcc("first")}>
             <AccordionSummary id="acc1">
-              <Typography>Daily Report - Work Completion</Typography>
+              <Typography>Field Worker</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                <a
-                  target="_blank"
-                  href="https://dailyreport.exbon.com/task-completion?pid=999999"
-                >
-                  Link
-                </a>
-              </Typography>
+              3 field workers worked on Task 1 for 8 hours.
             </AccordionDetails>
           </Accordion>
           <Accordion expanded={acc.second} onChange={() => changeAcc("second")}>
             <AccordionSummary id="acc2">
-              <Typography>Daily Report - Timesheet</Typography>
+              <Typography>Subcontractor</Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography>
-                <a
-                  target="_blank"
-                  href="https://dailyreport.exbon.com/timesheet?pid=999999"
-                >
-                  Link
-                </a>
-              </Typography>
+              ABC subcontractor finished 20% of Task 2.
             </AccordionDetails>
           </Accordion>
         </Grid>
@@ -149,10 +134,7 @@ const July082021 = () => {
               <p style={{ marginTop: "40px" }}>
                 Today is the first day of construction.
               </p>
-              <p>
-                3 field workers worked on Task 1 for 8 hours, and ABC
-                subcontractor finished 20% of Task 2.
-              </p>
+
               <div
                 style={{
                   marginTop: "50px",

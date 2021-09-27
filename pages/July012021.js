@@ -82,7 +82,6 @@ const July012021 = () => {
             <DatePicker
               variant="inline"
               disabled
-              label="Date"
               inputFormat="MM/dd/yyyy"
               value={"07/01/2021"}
               autoOk={true}
@@ -103,7 +102,7 @@ const July012021 = () => {
           <br />
           <br />
           <br />
-          <Accordion expanded={acc.first} onChange={() => changeAcc("first")}>
+          {/* <Accordion expanded={acc.first} onChange={() => changeAcc("first")}>
             <AccordionSummary id="acc1">
               <Typography>OneDrive Link</Typography>
             </AccordionSummary>
@@ -117,7 +116,7 @@ const July012021 = () => {
                 </a>
               </Typography>
             </AccordionDetails>
-          </Accordion>
+          </Accordion> */}
         </Grid>
         <Grid item xs={6}>
           <Box
