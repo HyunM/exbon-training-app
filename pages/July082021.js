@@ -59,9 +59,8 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 
 const July082021 = () => {
   const [acc, setAcc] = useState({
-    first: true,
-    second: true,
-    third: true,
+    first: false,
+    second: false,
   });
 
   const changeAcc = order => {
@@ -69,8 +68,6 @@ const July082021 = () => {
       setAcc({ ...acc, first: !acc.first });
     } else if (order == "second") {
       setAcc({ ...acc, second: !acc.second });
-    } else if (order == "third") {
-      setAcc({ ...acc, third: !acc.third });
     }
   };
 
