@@ -81,7 +81,6 @@ const July012021 = () => {
           <LocalizationProvider dateAdapter={DateAdapter}>
             <DatePicker
               variant="inline"
-              disabled
               inputFormat="MM/dd/yyyy"
               value={"07/01/2021"}
               autoOk={true}
